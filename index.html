@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GasSuraksha - Smart LPG Safety System</title>
+    <meta name="description" content="Stop gas leaks before they become disasters with GasSuraksha, the premium smart LPG safety system featuring real-time monitoring and remote shut-off.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass header">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <i data-lucide="flame" class="text-primary"></i>
+                GasSuraksha
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#stats">Impact</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <i data-lucide="sun" class="sun-icon"></i>
+                </button>
+                <button class="btn btn-primary d-none-mobile">Get Now</button>
+                <button class="mobile-menu-btn icon-btn d-none-desktop" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu glass">
+        <div class="mobile-menu-close">
+            <button class="icon-btn" id="close-menu"><i data-lucide="x"></i></button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#features" class="mobile-link">Features</a>
+            <a href="#how-it-works" class="mobile-link">How It Works</a>
+            <a href="#stats" class="mobile-link">Impact</a>
+            <button class="btn btn-primary w-full mt-4">Get Now</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero relative overflow-hidden">
+        <div class="container hero-content text-center relative z-10">
+            <div class="badge fade-up inline-flex glass">
+                <span class="pulse-dot"></span> Next-gen Safety Tech
+            </div>
+            <h1 class="hero-title fade-up delay-1">Stop <span class="text-gradient">Gas Leaks</span><br> Before They Become Disasters</h1>
+            <p class="hero-subtitle fade-up delay-2 mx-auto">Premium smart LPG safety system with real-time monitoring, AI-driven alerts, and automatic shut-off to protect what matters most.</p>
+            <div class="hero-actions fade-up delay-3 flex justify-center gap-4">
+                <button class="btn btn-primary btn-lg flex-center gap-2">
+                    Protect Your Home <i data-lucide="arrow-right" class="icon-sm"></i>
+                </button>
+                <button class="btn btn-outline btn-lg flex-center gap-2 glass">
+                    <i data-lucide="play-circle" class="icon-sm"></i> Watch Demo
+                </button>
+            </div>
+            
+            <div class="hero-stats fade-up delay-4 flex justify-center gap-8 mt-12 flex-wrap">
+                <div class="stat-item flex-center gap-2 glass px-4 py-2 rounded-full">
+                    <i data-lucide="shield-check" class="text-success"></i>
+                    <span class="font-medium">24/7 Protection</span>
+                </div>
+                <div class="stat-item flex-center gap-2 glass px-4 py-2 rounded-full">
+                    <i data-lucide="smartphone" class="text-primary"></i>
+                    <span class="font-medium">App Controlled</span>
+                </div>
+                <div class="stat-item flex-center gap-2 glass px-4 py-2 rounded-full">
+                    <i data-lucide="zap" class="text-warning"></i>
+                    <span class="font-medium">Instant Shut-off</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Abstract Background Shapes -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features section-padding relative z-10">
+        <div class="container">
+            <div class="section-header text-center reveal max-w-2xl mx-auto">
+                <h2 class="section-title">Intelligent Protection</h2>
+                <p class="section-subtitle">Advanced sensor technology combined with smart algorithms for unparalleled safety.</p>
+            </div>
+            
+            <div class="feature-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card glass reveal">
+                    <div class="feature-icon icon-primary-bg flex-center rounded-xl mb-6">
+                        <i data-lucide="radar" class="text-primary"></i>
+                    </div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>High-precision sensors detect MQ-2 gas levels and VOCs instantly, transmitting data securely to your smartphone.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card glass reveal delay-1">
+                    <div class="feature-icon icon-danger-bg flex-center rounded-xl mb-6">
+                        <i data-lucide="power-off" class="text-danger"></i>
+                    </div>
+                    <h3>Auto Shut-off</h3>
+                    <p>In case of a detected leak, the smart motorized valve automatically cuts off the gas supply in under 3 seconds.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card glass reveal delay-2">
+                    <div class="feature-icon icon-success-bg flex-center rounded-xl mb-6">
+                        <i data-lucide="bell-ring" class="text-success"></i>
+                    </div>
+                    <h3>Instant Alerts</h3>
+                    <p>Receive immediate push notifications, SMS, and loud local alarm sounds whenever an anomaly is detected.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card glass reveal">
+                    <div class="feature-icon icon-warning-bg flex-center rounded-xl mb-6">
+                        <i data-lucide="activity" class="text-warning"></i>
+                    </div>
+                    <h3>Usage Analytics</h3>
+                    <p>Track your daily gas consumption trends and get intelligently notified when your cylinder is running low.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card glass reveal delay-1">
+                    <div class="feature-icon icon-info-bg flex-center rounded-xl mb-6">
+                        <i data-lucide="wifi" class="text-info"></i>
+                    </div>
+                    <h3>IoT Connected</h3>
+                    <p>Seamlessly integrates with your home Wi-Fi and connects to the robust GasSuraksha cloud platform.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card glass reveal delay-2">
+                    <div class="feature-icon icon-dark-bg flex-center rounded-xl mb-6">
+                        <i data-lucide="battery-charging" class="text-text-main"></i>
+                    </div>
+                    <h3>Battery Backup</h3>
+                    <p>Built-in 48-hour battery backup ensures your home remains continuously protected even during power outages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section-padding relative z-10">
+        <div class="container">
+            <div class="stats-container glass reveal grid-4">
+                <div class="stat-box text-center p-6">
+                    <div class="stat-number text-gradient"><span class="counter" data-target="99.9">0</span><span class="stat-suffix">%</span></div>
+                    <p class="stat-label font-medium mt-2">Accuracy Rate</p>
+                </div>
+                <div class="stat-box text-center p-6">
+                    <div class="stat-number text-gradient"><span class="counter" data-target="3">0</span><span class="stat-suffix">s</span></div>
+                    <p class="stat-label font-medium mt-2">Response Time</p>
+                </div>
+                <div class="stat-box text-center p-6">
+                    <div class="stat-number text-gradient"><span class="counter" data-target="10">0</span><span class="stat-suffix">K+</span></div>
+                    <p class="stat-label font-medium mt-2">Homes Protected</p>
+                </div>
+                <div class="stat-box text-center p-6">
+                    <div class="stat-number text-gradient"><span class="counter" data-target="24">0</span><span class="stat-suffix">/7</span></div>
+                    <p class="stat-label font-medium mt-2">System Uptime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-padding relative z-10">
+        <div class="container">
+            <div class="cta-box glass relative overflow-hidden reveal p-12 text-center rounded-2xl mx-auto max-w-4xl border-gradient">
+                <div class="cta-content relative z-10">
+                    <h2 class="mb-4 text-3xl font-bold">Ready to secure your home?</h2>
+                    <p class="mb-8 text-lg max-w-2xl mx-auto">Join thousands of families who sleep peacefully knowing GasSuraksha is on guard.</p>
+                    <div class="cta-action flex-center flex-col gap-4">
+                        <button class="btn btn-primary btn-lg flex-center gap-2">Order Now <i data-lucide="arrow-right"></i></button>
+                        <p class="guarantee flex-center gap-2 text-sm mt-4 text-success font-medium">
+                            <i data-lucide="shield-check" class="icon-sm"></i> 30-Day Money Back Guarantee
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-shape shape-cta" style="bottom:-50%; right:-10%; width: 500px; height: 500px"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section-padding pb-8 mt-12 relative z-10">
+        <div class="container border-t pt-12">
+            <div class="footer-grid grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="footer-brand md:col-span-1">
+                    <a href="#" class="logo flex items-center gap-2 mb-4 font-bold text-xl">
+                        <i data-lucide="flame" class="text-primary"></i>
+                        GasSuraksha
+                    </a>
+                    <p class="text-sm mb-6 opacity-80">The smartest way to protect your home from LPG gas leaks and fire hazards with advanced AI technology.</p>
+                    <div class="social-links flex gap-4">
+                        <a href="#" class="icon-btn glass" aria-label="Twitter"><i data-lucide="twitter" class="icon-sm"></i></a>
+                        <a href="#" class="icon-btn glass" aria-label="Facebook"><i data-lucide="facebook" class="icon-sm"></i></a>
+                        <a href="#" class="icon-btn glass" aria-label="Instagram"><i data-lucide="instagram" class="icon-sm"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="font-bold mb-4">Product</h3>
+                    <ul class="flex flex-col gap-3 text-sm opacity-80">
+                        <li><a href="#" class="hover-text-primary transition-colors">Features</a></li>
+                        <li><a href="#" class="hover-text-primary transition-colors">Specifications</a></li>
+                        <li><a href="#" class="hover-text-primary transition-colors">App Demo</a></li>
+                        <li><a href="#" class="hover-text-primary transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="font-bold mb-4">Support</h3>
+                    <ul class="flex flex-col gap-3 text-sm opacity-80">
+                        <li><a href="#" class="hover-text-primary transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover-text-primary transition-colors">Installation Guide</a></li>
+                        <li><a href="#" class="hover-text-primary transition-colors">Warranty</a></li>
+                        <li><a href="#" class="hover-text-primary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter md:col-span-1">
+                    <h3 class="font-bold mb-4">Stay Updated</h3>
+                    <p class="text-sm opacity-80 mb-4">Subscribe to our newsletter for safety tips and product updates.</p>
+                    <form class="newsletter-form flex gap-2 w-full">
+                        <input type="email" placeholder="Your email..." required class="input glass flex-1 px-4 py-2 rounded-lg outline-none text-sm">
+                        <button type="submit" class="btn btn-primary p-2 rounded-lg"><i data-lucide="send" class="icon-sm"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom flex flex-col md:flex-row justify-between items-center text-sm opacity-60 border-t pt-8">
+                <p>&copy; 2026 GasSuraksha. All rights reserved.</p>
+                <div class="legal-links flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover-text-primary transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover-text-primary transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
